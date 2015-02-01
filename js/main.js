@@ -119,12 +119,12 @@ jQuery(document).ready(function($){
 		})
 		if(selected.find('video').length > 0) {
 			//video has been already loaded - play it
-			selected.find('video').eq(0).show().get(0).play();
+			//selected.find('video').eq(0).show().get(0).play();
 		} else {
 			//load video - the name of the video is the data-video of the image
 			var videoUrl = selected.find('.cd-image-container img').data('video'),
 				video = $('<video loop><source src="'+videoUrl+'.mp4" type="video/mp4" /><source src="'+videoUrl+'.webm" type="video/webm" />Sorry, your browser does not support HTML5 video.</video>');
-			video.appendTo(selected.find('.cd-image-wrapper')).hide();
+			//video.appendTo(selected.find('.cd-image-wrapper')).hide();
 
 			var loaded = 'false';
 			//check if the canplaythrough event occurs - video is ready to be played
